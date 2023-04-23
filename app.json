@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "10dd32e3-ec54-42e4-921d-904120688aa9"
+      }
+    },
+    "owner": "tdputtick"
   }
 }
