@@ -24,9 +24,11 @@ const CreateNoteCard = () => {
       <View>
         <Text>What would you like your note title to be?</Text>
         <TextInput
+          style={styles.input}
           maxLength={50}
-          placeholder={noteTitle}
-          onEndEditing={(newTitle) => {
+          value={noteTitle}
+          placeholder="Note Title"
+          onChangeText={(newTitle) => {
             dispatch(setTitle(newTitle));
           }}
         />
@@ -53,5 +55,9 @@ const styles = StyleSheet.create({
     margin: 12,
     borderWidth: 1,
     padding: 10,
+  },
+  input: {
+    borderRadius: 10,
+    borderWidth: 1,
   },
 });

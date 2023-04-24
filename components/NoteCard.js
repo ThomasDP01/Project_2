@@ -43,7 +43,7 @@ const NoteCard = () => {
 
   const navigation = useNavigation();
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.container}>
       <View>
         <Text>Here are your notes</Text>
       </View>
@@ -79,9 +79,10 @@ const styles = StyleSheet.create({
   item: {
     backgroundColor: "#f9c2ff",
     padding: 30,
-    marginVertical: 6,
+    marginVertical: 1,
   },
   title: {
     fontSize: 20,
   },
+  button: {},
 });

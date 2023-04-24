@@ -1,8 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  title: "Note Name",
-  message: "Note Message",
+  title: "",
+  message: "",
 };
 
 export const noteSlice = createSlice({
@@ -17,7 +17,7 @@ export const noteSlice = createSlice({
     },
   },
 });
-
+export const { setTitle, setMessage } = noteSlice.actions;
 export const selectNoteTitle = (state) => state.noteData.title;
 export const selectNoteMessage = (state) => state.noteData.message;
 
